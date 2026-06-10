@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="600" prefHeight="550"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.moreira_lluglla_encuesta.EncuestaController">
+
+    <children>
+
+        <Label text="1. ¿Capital de Ecuador?" layoutX="20" layoutY="20"/>
+        <RadioButton text="Quito" layoutX="40" layoutY="50" toggleGroup="$p1" fx:id="p1a"/>
+        <RadioButton text="Guayaquil" layoutX="40" layoutY="70" toggleGroup="$p1" fx:id="p1b"/>
+        <RadioButton text="Cuenca" layoutX="40" layoutY="90" toggleGroup="$p1" fx:id="p1c"/>
+
+        <Label text="2. ¿2 + 2?" layoutX="20" layoutY="130"/>
+        <RadioButton text="3" layoutX="40" layoutY="160" toggleGroup="$p2" fx:id="p2a"/>
+        <RadioButton text="4" layoutX="40" layoutY="180" toggleGroup="$p2" fx:id="p2b"/>
+        <RadioButton text="5" layoutX="40" layoutY="200" toggleGroup="$p2" fx:id="p2c"/>
+
+        <Label text="3. Lenguaje principal de JavaFX?" layoutX="20" layoutY="240"/>
+        <RadioButton text="Java" layoutX="40" layoutY="270" toggleGroup="$p3" fx:id="p3a"/>
+        <RadioButton text="Python" layoutX="40" layoutY="290" toggleGroup="$p3" fx:id="p3b"/>
+        <RadioButton text="C++" layoutX="40" layoutY="310" toggleGroup="$p3" fx:id="p3c"/>
+
+        <Label text="4. Color del cielo?" layoutX="20" layoutY="350"/>
+        <RadioButton text="Azul" layoutX="40" layoutY="380" toggleGroup="$p4" fx:id="p4a"/>
+        <RadioButton text="Rojo" layoutX="40" layoutY="400" toggleGroup="$p4" fx:id="p4b"/>
+        <RadioButton text="Verde" layoutX="40" layoutY="420" toggleGroup="$p4" fx:id="p4c"/>
+
+        <Button text="Calcular Puntaje"
+                layoutX="220" layoutY="460"
+                onAction="#calcular"/>
+
+        <Label fx:id="lblResultado"
+               layoutX="150" layoutY="500"
+               text=""/>
+
+    </children>
+
+</AnchorPane>
